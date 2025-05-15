@@ -1,3 +1,4 @@
+import dinukaImage from "#/opengraph-image.png";
 import Header from "@/components/base/Header";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -37,9 +38,9 @@ export const metadata: Metadata = {
     siteName: "Dinuka Dilshan Portfolio",
     images: [
       {
-        url: "/opengraphg-image.png",
-        width: 1200,
-        height: 630,
+        url: dinukaImage.src,
+        width: dinukaImage.width,
+        height: dinukaImage.height,
         alt: "Dinuka Dilshan - Fullstack Developer",
       },
     ],
@@ -51,7 +52,7 @@ export const metadata: Metadata = {
     title: "Dinuka Dilshan",
     description:
       "Fast, scalable web apps crafted with care — by Dinuka Dilshan.",
-    images: ["/twitter-image.png"],
+    images: [dinukaImage.src],
   },
 };
 
