@@ -62,6 +62,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Dinuka Dilshan",
+              url: "https://dinukadilshan.com",
+              image: "https://dinukadilshan.com/opengraph-image.png",
+              jobTitle: "Fullstack Web Developer",
+              sameAs: [
+                "https://github.com/Dinuka-Dilshan",
+                "https://www.linkedin.com/in/dilshan-dinuka",
+              ],
+            }),
+          }}
+        />
+      </head>
       <body
         className={`${inter.className}  antialiased bg-gradient-to-br from-pink-50 to-blue-50 min-h-screen`}
       >
