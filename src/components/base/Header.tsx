@@ -15,7 +15,7 @@ const SOCIAL_LINKS: { url: string; Icon: LucideIcon }[] = [
 const Header = () => {
   return (
     <nav className="w-full fixed top-0 left-0 backdrop-blur-xl bg-white/10 border-b z-50">
-      <div className="container px-6 py-6 mx-auto flex justify-between items-center">
+      <div className="container px-6 py-3 lg:py-6 mx-auto flex justify-between items-center">
         <Logo />
         {/* <ul className="flex gap-5">
           {HEADER_LINKS.map(({ label, path }) => (
