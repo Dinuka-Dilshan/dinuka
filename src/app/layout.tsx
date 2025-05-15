@@ -86,7 +86,7 @@ export default function RootLayout({
         className={`${inter.className}  antialiased bg-gradient-to-br from-pink-50 to-blue-50 min-h-screen`}
       >
         <Header />
-        <main className="container px-6 lg:px-10 mx-auto max-w-4xl">
+        <main className="container px-6 lg:px-10 mx-auto max-w-4xl mb-5">
           {children}
         </main>
       </body>
