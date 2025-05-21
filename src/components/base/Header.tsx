@@ -61,7 +61,7 @@ const Header = () => {
             >
               <Icon
                 size={20}
-                className="text-zinc-700   hover:text-pink-600 transition-colors"
+                className="text-zinc-700 hover:scale-110  hover:text-pink-600 transition-all"
               />
               <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 h-1 w-1 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity" />
             </Link>

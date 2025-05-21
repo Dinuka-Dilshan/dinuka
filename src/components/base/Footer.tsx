@@ -4,20 +4,19 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="relative mt-20 overflow-hidden border-t border-purple-500/20">
+    <footer className="relative mt-20 overflow-hidden border-t border-purple-500/20 px-4 lg:px-10">
       {/* Decorative gradient background */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-purple-500/5 via-pink-500/5 to-amber-500/5" />
 
       <div className="container mx-auto px-4 py-8">
         <div className="grid gap-10 md:grid-cols-2 ">
           {/* Brand Section */}
-          <div className="space-y-4">
+          <div className="space-y-2">
             <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400">
               Dinuka Dilshan
             </h2>
             <p className="text-zinc-600 dark:text-zinc-300 max-w-xs">
-              Creating innovative solutions and memorable experiences through
-              technology and design.
+              Web apps with vibes, speed, and no missed deadlines.
             </p>
             <div className="flex space-x-4">
               {SOCIAL_LINKS.map(({ Icon, url, label }) => (
