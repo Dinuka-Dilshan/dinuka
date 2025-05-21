@@ -12,7 +12,6 @@ const ProfessionalExperience = () => {
       title="Professional Journey"
     >
       <TimeLine
-        className="mt-4"
         data={[
           {
             logo: RhinoLogo,

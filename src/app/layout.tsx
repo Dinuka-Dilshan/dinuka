@@ -1,4 +1,5 @@
 import dinukaImage from "#/opengraph-image.png";
+import Footer from "@/components/base/Footer";
 import Header from "@/components/base/Header";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -83,12 +84,13 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.className}  antialiased bg-gradient-to-br from-pink-50 to-blue-50 min-h-screen`}
+        className={`${inter.className}  antialiased bg-gradient-to-br from-purple-500/5 via-pink-500/5 to-amber-500/5 min-h-screen`}
       >
         <Header />
-        <main className="container px-6 lg:px-10 mx-auto max-w-4xl mb-5">
+        <main className="container px-6 lg:px-10 mx-auto max-w-4xl mb-5 box-border">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
