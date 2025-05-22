@@ -7,7 +7,7 @@ const HeroSection = () => {
         <DinukaImage />
         <div>
           <h1 className="text-3xl ">
-            Hey I&apos;m <span className="font-semibold">Dinuka Dilshan</span>
+            Hey, I&apos;m <span className="font-semibold">Dinuka Dilshan</span>
           </h1>
           <p className="text-mute-dark text-xl font-semibold">
             Software engineer at Rhino Partners

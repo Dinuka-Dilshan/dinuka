@@ -7,9 +7,9 @@ import "./globals.css";
 const bricolage = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Dinuka Dilshan",
+  title: "Dinuka Dilshan | Software engineer at Rhino Partners",
   description:
-    "Fullstack web developer crafting fast, scalable, and user-friendly web apps using React, Next.js, Node.js, TypeScript, and AWS.",
+    "I'm a software engineer with 3+ years of experience creating fast, user-friendly full-stack web apps that run in the cloud. I love building software solutions that deliver real value for both users and businesses.",
   authors: [{ name: "Dinuka Dilshan", url: "https://dinukadilshan.com" }],
   creator: "Dinuka Dilshan",
   keywords: [
@@ -29,11 +29,9 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL("https://dinukadilshan.com"),
   openGraph: {
-    title: "Dinuka Dilshan",
+    title: "Dinuka Dilshan | Software engineer at Rhino Partners",
     description:
-      "Fullstack developer building modern, cloud-powered web apps that deliver speed, scalability, and great user experiences.",
-    url: "https://dinukadilshan.com",
-    siteName: "Dinuka Dilshan Portfolio",
+      "I'm a software engineer with 3+ years of experience creating fast, user-friendly full-stack web apps that run in the cloud. I love building software solutions that deliver real value for both users and businesses.",
     images: [
       {
         url: dinukaImage.src,
@@ -42,15 +40,21 @@ export const metadata: Metadata = {
         alt: "Dinuka Dilshan - Fullstack Developer",
       },
     ],
-    locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dinuka Dilshan",
+    title: "Dinuka Dilshan | Software engineer at Rhino Partners",
     description:
-      "Fast, scalable web apps crafted with care — by Dinuka Dilshan.",
-    images: [dinukaImage.src],
+      "I'm a software engineer with 3+ years of experience creating fast, user-friendly full-stack web apps that run in the cloud. I love building software solutions that deliver real value for both users and businesses.",
+    images: [
+      {
+        url: dinukaImage.src,
+        width: dinukaImage.width,
+        height: dinukaImage.height,
+        alt: "Dinuka Dilshan - Fullstack Developer",
+      },
+    ],
   },
 };
 
