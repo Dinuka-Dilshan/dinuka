@@ -41,6 +41,7 @@ export const metadata: Metadata = {
       },
     ],
     type: "website",
+    url: "https://dinukadilshan.com",
   },
   twitter: {
     card: "summary_large_image",
