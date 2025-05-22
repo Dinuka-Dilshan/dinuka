@@ -1,13 +1,10 @@
 import dinukaImage from "#/opengraph-image.png";
-import Footer from "@/components/base/Footer";
-import Header from "@/components/base/Header";
+import Footer from "@/modules/Landing/Footer";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
-});
+const bricolage = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Dinuka Dilshan",
@@ -84,13 +81,11 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.className}  antialiased bg-gradient-to-br from-purple-500/5 via-pink-500/5 to-amber-500/5 min-h-screen`}
+        className={`${bricolage.className}  antialiased flex items-center flex-col`}
       >
-        <Header />
-        <main className="container px-6 lg:px-10 mx-auto max-w-4xl mb-5 box-border">
-          {children}
+        <main className="container max-w-xl my-10 lg:my-32 px-5 lg:px-0">
+          {children} <Footer />
         </main>
-        <Footer />
       </body>
     </html>
   );
