@@ -1,9 +1,11 @@
 import DinukaImage from "@/modules/Landing/components/DinukaImage";
+import { ExternalLink } from "lucide-react";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
     <section className="flex flex-col gap-10">
-      <div className="flex items-center gap-5 flex-col lg:flex-row">
+      <div className="flex lg:items-center gap-5 flex-col lg:flex-row">
         <DinukaImage />
         <div>
           <h1 className="text-3xl ">
@@ -20,6 +22,18 @@ const HeroSection = () => {
         the cloud. I love building software solutions that deliver real value
         for both users and businesses.
       </p>
+      <Link
+        className="text-mute-light font-medium -mt-6"
+        href="/DinukaDilshan.pdf"
+        target="_blank"
+      >
+        View my cv{" "}
+        <ExternalLink
+          size={15}
+          className="text-mute-light inline-block ml-0.5 mb-0.5"
+          strokeWidth={3}
+        />
+      </Link>
     </section>
   );
 };
