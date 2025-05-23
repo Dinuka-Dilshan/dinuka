@@ -23,7 +23,7 @@ const HeroSection = () => {
         for both users and businesses.
       </p>
       <Link
-        className="text-mute-light font-medium -mt-6"
+        className="text-mute-light font-medium"
         href="/DinukaDilshan.pdf"
         target="_blank"
       >
