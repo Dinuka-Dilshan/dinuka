@@ -42,13 +42,13 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 
-  --color-mute-dark: oklch(51% 0% 287deg);
-  --color-mute-light: oklch(57% 0% 68deg);
+  --color-mute-dark: #1A1A1A;
+  --color-mute-light: #333333;
 }
 
 :root {
   --radius: 0.75rem;
-  --background: oklch(1 0 0);
+  --background: #F5F5F5;
   --foreground: oklch(23% 1% 261deg) --card: oklch(1 0 0);
   --card-foreground: oklch(0.141 0.005 285.823);
   --popover: oklch(1 0 0);
