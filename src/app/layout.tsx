@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   keywords: [
     "Dinuka",
     "Dinuka Dilshan",
+    "Software Engineer",
     "Fullstack Developer",
     "Web Developer",
     "React Developer",
@@ -76,7 +77,7 @@ export default function RootLayout({
               name: "Dinuka Dilshan",
               url: "https://dinukadilshan.com",
               image: "https://dinukadilshan.com/opengraph-image.png",
-              jobTitle: "Fullstack Web Developer",
+              jobTitle: "software engineer",
               sameAs: [
                 "https://github.com/Dinuka-Dilshan",
                 "https://www.linkedin.com/in/dilshan-dinuka",
