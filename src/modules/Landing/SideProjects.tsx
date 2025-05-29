@@ -5,7 +5,7 @@ import Link from "next/link";
 const projects = [
   {
     title: "FlickPick",
-    demoLink: "https://flick-pick-new.vercel.app/",
+    demoLink: "https://flickpick.dinukadilshan.com/",
   },
   {
     title: "Ben Fahimnia - Personal Portfolio Website",
