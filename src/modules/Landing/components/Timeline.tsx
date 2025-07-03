@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Dot } from "lucide-react";
-import Image, { StaticImageData } from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+import { StaticImageData } from "next/image";
 import { Fragment } from "react";
 
 type TimelineItem = {
@@ -20,7 +21,7 @@ const TimeLine = ({ data, className }: Props) => {
         <div key={`${companyName}-${index}`} className="flex h-full gap-5">
           <div className="gap-3 flex flex-col items-center">
             <div className="relative h-10 w-10 rounded-full  bg-black flex justify-center items-center">
-              <Image src={logo} alt="" className="rounded-full" />
+              <ExportedImage src={logo} alt="" className="rounded-full" />
             </div>
             {experiences.map((_, index) => (
               <Fragment key={index}>
