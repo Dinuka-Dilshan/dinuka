@@ -19,5 +19,7 @@ phases:
       - echo "Build completed successfully!"
 artifacts:
   files:
-    - '**/*'
-  base-directory: 'out' 
+    - "**/*"
+  base-directory: "out"
+  discard-paths: yes
+  packaging: NONE
