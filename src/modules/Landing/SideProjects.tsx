@@ -3,10 +3,10 @@ import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 
 const projects = [
-  {
-    title: "FlickPick",
-    demoLink: "https://flickpick.dinukadilshan.com/",
-  },
+  // {
+  //   title: "FlickPick",
+  //   demoLink: "https://flickpick.dinukadilshan.com/",
+  // },
   {
     title: "Ben Fahimnia - Personal Portfolio Website",
     demoLink: "https://www.benfahimnia.com/",
