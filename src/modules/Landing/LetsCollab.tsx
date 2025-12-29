@@ -21,7 +21,7 @@ const collabLinks = [
     Icon: Rss,
   },
   {
-    url: "https://www.linkedin.com/in/dilshan-dinuka",
+    url: "https://www.linkedin.com/in/dinuka-abeygunawardhana/",
     title: "LinkedIn",
     Icon: LinkedinIcon,
   },

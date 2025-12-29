@@ -79,7 +79,7 @@ export default function RootLayout({
               },
               "sameAs": [
                 "https://github.com/Dinuka-Dilshan",
-                "https://www.linkedin.com/in/dilshan-dinuka",
+                "https://www.linkedin.com/in/dinuka-abeygunawardhana/",
                 "https://www.researchgate.net/profile/Dinuka-Abeygunawardhana"
               ],
             }),
