@@ -8,8 +8,7 @@ Welcome to my personal portfolio! I'm **Dinuka Dilshan** — a fullstack web dev
 
 ## 🛠️ Tech Stack
 
-- **Framework**: [Next.js 15 (App Router)](https://nextjs.org/)
+- **Framework**: [Next.js 16 (App Router)](https://nextjs.org/)
 - **UI**: [shadcn/ui](https://ui.shadcn.com/), Tailwind CSS
-- **Cloud**: [AWS Amplify](https://aws.amazon.com/amplify/) for hosting
+- **Cloud**: [AWS S3](https://aws.amazon.com/s3/), [AWS CloudFront](https://aws.amazon.com/cloudfront/) for hosting
 - **Languages**: TypeScript
-
