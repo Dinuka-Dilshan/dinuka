@@ -5,8 +5,9 @@ phases:
     runtime-versions:
       nodejs: 22
     commands:
-      - echo "Installing pnpm..."
-      - npm install -g pnpm
+      - echo "Enabling pnpm via Corepack..."
+      - corepack enable
+      - corepack prepare pnpm@latest --activate
       - echo "Setting pnpm store directory for caching..."
       - pnpm config set store-dir /root/.pnpm-store
   pre_build:
@@ -30,4 +31,3 @@ cache:
   paths:
     - "/root/.pnpm-store/**/*"
     - "node_modules/**/*"
-     
