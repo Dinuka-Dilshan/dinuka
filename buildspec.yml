@@ -7,7 +7,7 @@ phases:
     commands:
       - echo "Installing dependencies..."
       # Use 'npm ci' for faster, cleaner builds in CI/CD
-      - npm ci
+      - npm install
   pre_build:
     commands:
       - echo "Running pre-build tasks..."
