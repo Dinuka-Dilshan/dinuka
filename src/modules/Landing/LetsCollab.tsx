@@ -1,9 +1,11 @@
 import Section from "@/modules/Landing/Section";
 import {
+  BookOpenText,
   GithubIcon,
   LinkedinIcon,
   Mail,
   MessageCircleMore,
+  Rss,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -14,11 +16,21 @@ const collabLinks = [
     Icon: GithubIcon,
   },
   {
+    url: "https://stackoverflow.com/users/12492472/dinuka-dilshan",
+    title: "Stackoverflow",
+    Icon: Rss,
+  },
+  {
     url: "https://www.linkedin.com/in/dilshan-dinuka",
     title: "LinkedIn",
     Icon: LinkedinIcon,
   },
   { url: "mailto:jadinukadilshan@gmail.com", title: "Email", Icon: Mail },
+  {
+    url: "https://www.researchgate.net/profile/Dinuka-Abeygunawardhana",
+    title: "ResearchGate",
+    Icon: BookOpenText,
+  },
   {
     url: "https://wa.me/+94762629249",
     title: "WhatsApp",

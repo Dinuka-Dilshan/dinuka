@@ -7,12 +7,13 @@ import "./globals.css";
 const bricolage = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Dinuka Dilshan | Software engineer at Rhino Partners",
+  title: "Dinuka Abeygunawardhana (Dinuka Dilshan) | Software Engineer",
   description:
-    "I'm a software engineer with 3+ years of experience creating fast, user-friendly full-stack web apps that run in the cloud. I love building software solutions that deliver real value for both users and businesses.",
-  authors: [{ name: "Dinuka Dilshan", url: "https://dinukadilshan.com" }],
-  creator: "Dinuka Dilshan",
+    "Official website of Dinuka Abeygunawardhana (Dinuka Dilshan), a Software Engineer with 3+ years of experience creating fast, user-friendly full-stack web apps.",
+  authors: [{ name: "Dinuka Abeygunawardhana", url: "https://dinukadilshan.com" }],
+  creator: "Dinuka Abeygunawardhana",
   keywords: [
+    "Dinuka Abeygunawardhana", 
     "Dinuka",
     "Dinuka Dilshan",
     "Software Engineer",
@@ -23,22 +24,19 @@ export const metadata: Metadata = {
     "TypeScript Developer",
     "AWS Developer",
     "Cloud Web Apps",
-    "Fast Web Applications",
-    "Scalable Web Solutions",
-    "Modern Web Development",
-    "Freelance Developer",
+    "University of Kelaniya", 
   ],
   metadataBase: new URL("https://dinukadilshan.com"),
   openGraph: {
-    title: "Dinuka Dilshan | Software engineer at Rhino Partners",
+    title: "Dinuka Abeygunawardhana (Dinuka Dilshan) | Software Engineer",
     description:
-      "I'm a software engineer with 3+ years of experience creating fast, user-friendly full-stack web apps that run in the cloud. I love building software solutions that deliver real value for both users and businesses.",
+      "Software engineer with 3+ years of experience building scalable web solutions. Explore the portfolio of Dinuka Abeygunawardhana.",
     images: [
       {
         url: dinukaImage.src,
         width: dinukaImage.width,
         height: dinukaImage.height,
-        alt: "Dinuka Dilshan - Fullstack Developer",
+        alt: "Dinuka Abeygunawardhana - Software Engineer",
       },
     ],
     type: "website",
@@ -46,17 +44,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dinuka Dilshan | Software engineer at Rhino Partners",
-    description:
-      "I'm a software engineer with 3+ years of experience creating fast, user-friendly full-stack web apps that run in the cloud. I love building software solutions that deliver real value for both users and businesses.",
-    images: [
-      {
-        url: dinukaImage.src,
-        width: dinukaImage.width,
-        height: dinukaImage.height,
-        alt: "Dinuka Dilshan - Fullstack Developer",
-      },
-    ],
+    title: "Dinuka Abeygunawardhana | Software Engineer",
+    description: "Software engineer specializing in full-stack web development and cloud solutions.",
+    images: [dinukaImage.src],
   },
 };
 
@@ -74,23 +64,34 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Dinuka Dilshan",
-              url: "https://dinukadilshan.com",
-              image: "https://dinukadilshan.com/opengraph-image.png",
-              jobTitle: "software engineer",
-              sameAs: [
+              "name": "Dinuka Abeygunawardhana",
+              "alternateName": "Dinuka Dilshan", 
+              "url": "https://dinukadilshan.com",
+              "image": "https://dinukadilshan.com/opengraph-image.png",
+              "jobTitle": "Software Engineer",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Rhino Partners"
+              },
+              "alumniOf": {
+                "@type": "CollegeOrUniversity",
+                "name": "University of Kelaniya" 
+              },
+              "sameAs": [
                 "https://github.com/Dinuka-Dilshan",
                 "https://www.linkedin.com/in/dilshan-dinuka",
+                "https://www.researchgate.net/profile/Dinuka-Abeygunawardhana"
               ],
             }),
           }}
         />
       </head>
       <body
-        className={`${bricolage.className}  antialiased flex items-center flex-col`}
+        className={`${bricolage.className} antialiased flex items-center flex-col`}
       >
         <main className="container max-w-xl my-10 lg:my-32 px-5 lg:px-0">
-          {children} <Footer />
+          {children} 
+          <Footer />
         </main>
       </body>
     </html>
