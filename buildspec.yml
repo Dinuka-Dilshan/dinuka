@@ -1,23 +1,33 @@
-#create a aws codebuild project to build nextjs app
 version: 0.2
+
 phases:
   install:
     runtime-versions:
       nodejs: 22
     commands:
-      - echo "Installing dependencies..."
-      - npm install
+      - echo "Installing pnpm..."
+      - npm install -g pnpm
+      - echo "Setting pnpm store directory for caching..."
+      - pnpm config set store-dir /root/.pnpm-store
   pre_build:
     commands:
-      - echo "Running pre-build tasks..."
+      - echo "Installing dependencies..."
+      - pnpm install --frozen-lockfile
   build:
     commands:
-      - echo "Building the Next.js app..."
-      - npm run build
+      - echo "Building static export..."
+      - pnpm run build
   post_build:
     commands:
-      - echo "Build completed successfully!"
+      - echo "Build completed on `date`"
+
 artifacts:
+  base-directory: "out"
   files:
     - "**/*"
-  base-directory: "out"
+
+cache:
+  paths:
+    - "/root/.pnpm-store/**/*"
+    - "node_modules/**/*"
+     
