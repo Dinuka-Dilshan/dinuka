@@ -5,19 +5,16 @@ phases:
     runtime-versions:
       nodejs: 22
     commands:
-      - echo "Enabling pnpm via Corepack..."
-      - corepack enable
-      - corepack prepare pnpm@latest --activate
-      - echo "Setting pnpm store directory for caching..."
-      - pnpm config set store-dir /root/.pnpm-store
+      - echo "Installing dependencies..."
+      # Use 'npm ci' for faster, cleaner builds in CI/CD
+      - npm ci
   pre_build:
     commands:
-      - echo "Installing dependencies..."
-      - pnpm install --frozen-lockfile
+      - echo "Running pre-build tasks..."
   build:
     commands:
       - echo "Building static export..."
-      - pnpm run build
+      - npm run build
   post_build:
     commands:
       - echo "Build completed on `date`"
@@ -29,5 +26,4 @@ artifacts:
 
 cache:
   paths:
-    - "/root/.pnpm-store/**/*"
     - "node_modules/**/*"
