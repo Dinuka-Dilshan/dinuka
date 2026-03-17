@@ -11,7 +11,7 @@ const TimeLine_Data = [
     experiences: [
       {
         description:
-          "Built a modern data-driven web platform from the ground up using Next.js, AWS, and modern React tools, featuring dynamic visualizations, API integrations, and responsive UI components.",
+          "Built a modern data-driven web platform from the ground up using React.js, Next.js, Tailwind CSS, AWS, and modern React tools, featuring dynamic visualizations, API integrations, and responsive UI components.",
         designation: "Software Engineer",
         years: "April 2025 - Present",
       },
