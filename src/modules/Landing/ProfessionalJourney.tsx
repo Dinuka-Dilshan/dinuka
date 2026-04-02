@@ -10,8 +10,9 @@ const TimeLine_Data = [
     companyName: "Rhino Partners",
     experiences: [
       {
-        description:
-          "Built a modern data-driven web platform from the ground up using React.js, Next.js, Tailwind CSS, AWS, and modern React tools, featuring dynamic visualizations, API integrations, and responsive UI components.",
+        description: `Co-architected the frontend of a greenfield financial data platform for investors to analyze company
+performance, funding, and market metrics at scale - built on Next.js, React, and AWS to support thousands of
+concurrent users with high availability.`,
         designation: "Software Engineer",
         years: "April 2025 - Present",
       },
@@ -22,8 +23,8 @@ const TimeLine_Data = [
     companyName: "Villvay Systems (Pvt) Ltd",
     experiences: [
       {
-        description:
-          "Developed full-stack features for an e-commerce application using Next.js and React, implementing optimized data fetching, responsive UI components, and scalable cloud deployment.",
+        description: `Fixed-term contract to rescue a delayed e-commerce launch - onboarded mid-project with an aggressive go-live
+deadline.`,
         designation: "Software Engineer",
         years: "January 2025 - April 2025",
       },
@@ -34,14 +35,15 @@ const TimeLine_Data = [
     companyName: "Aeronology",
     experiences: [
       {
-        description:
-          "Contributed to multiple air ticket booking and data-driven applications, developing full-stack features using React, TypeScript, Node.js, C#, and AWS with a focus on performance, scalability, and secure workflows.",
+        description: `Served as a core contributor on the full rewrite of AeroControl, migrating a legacy Vue.js architecture to a
+modern React stack. Implemented React Query with advanced caching strategies within a BFF architecture,
+cutting baseline load times by an estimated 35%.`,
         designation: "Software Engineer",
         years: "March 2023 - January 2025",
       },
       {
-        description:
-          "Developed reusable React components and enhanced frontend applications during internship using TypeScript and Material-UI.",
+        description: `Delivered full-stack features using AWS Lambda, DynamoDB, and S3 within a React, Node.js, and .NET
+ecosystem.`,
         designation: "Software Engineer (Intern) ",
         years: "Sep 2022 - Mar 2023",
       },
