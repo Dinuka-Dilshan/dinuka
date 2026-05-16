@@ -1,15 +1,19 @@
+import BlogPreview from "@/modules/Landing/BlogPreview";
+import Experience from "@/modules/Landing/Experience";
 import HeroSection from "@/modules/Landing/HeroSection";
-import LetsCollab from "@/modules/Landing/LetsCollab";
-import ProfessionalJourney from "@/modules/Landing/ProfessionalJourney";
+import HireMe from "@/modules/Landing/HireMe";
 import SideProjects from "@/modules/Landing/SideProjects";
+import TechStack from "@/modules/Landing/TechStack";
 
 export default async function Home() {
   return (
     <>
       <HeroSection />
-      <ProfessionalJourney />
+      <TechStack />
       <SideProjects />
-      <LetsCollab />
+      <Experience />
+      <BlogPreview />
+      <HireMe />
     </>
   );
 }

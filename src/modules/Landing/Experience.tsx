@@ -20,6 +20,8 @@ concurrent users with high availability.`,
   },
   {
     logo: VillvayLogo,
+    logoBg: "black",
+    logoContain: true,
     companyName: "Villvay Systems (Pvt) Ltd",
     experiences: [
       {
@@ -51,12 +53,12 @@ ecosystem.`,
   },
 ];
 
-const ProfessionalJourney = () => {
+const Experience = () => {
   return (
-    <Section title="Professional journey">
-      <TimeLine className="mt-6" data={TimeLine_Data} />
+    <Section title="Experience">
+      <TimeLine data={TimeLine_Data} />
     </Section>
   );
 };
 
-export default ProfessionalJourney;
+export default Experience;

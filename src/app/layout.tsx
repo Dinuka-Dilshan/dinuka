@@ -89,7 +89,7 @@ export default function RootLayout({
       <body
         className={`${bricolage.className} antialiased flex items-center flex-col`}
       >
-        <main className="container max-w-xl my-10 lg:my-32 px-5 lg:px-0">
+        <main className="container max-w-3xl my-12 lg:my-24 px-5 lg:px-8">
           {children} 
           <Footer />
         </main>
