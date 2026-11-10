@@ -11,7 +11,7 @@ const HeroSection = () => {
         <div className="inline-flex items-center gap-2 bg-sage-light/60 text-olive border border-sage-mid px-3 py-1.5 rounded-full w-fit">
           <span className="h-2 w-2 rounded-full bg-olive animate-pulse" />
           <span className="text-sm font-semibold tracking-wide">
-            Open to work
+            Open to remote &amp; relocation
           </span>
         </div>
 
@@ -21,7 +21,7 @@ const HeroSection = () => {
               Dinuka Dilshan
             </h1>
             <p className="text-xl lg:text-2xl text-olive font-semibold mt-2">
-              Frontend Engineer
+              Senior Software Engineer
             </p>
           </div>
           <div className="lg:hidden relative shrink-0">
@@ -39,9 +39,10 @@ const HeroSection = () => {
         </div>
 
         <p className="text-body leading-7 text-base">
-          I craft fast, accessible, and visually polished web experiences using
-          React and Next.js. Currently helping build financial platforms at
-          Rhino Partners.
+          I build scalable, accessible web applications end to end: React and
+          Next.js on the frontend, with Node.js, Python and AWS behind them.
+          I&apos;m currently a Senior Software Engineer at Rhino Partners,
+          working on AI-powered clinical search.
         </p>
 
         <div className="flex items-center gap-3 flex-wrap">

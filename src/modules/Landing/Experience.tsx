@@ -10,11 +10,20 @@ const TimeLine_Data = [
     companyName: "Rhino Partners",
     experiences: [
       {
-        description: `Co-architected the frontend of a greenfield financial data platform for investors to analyze company
-performance, funding, and market metrics at scale - built on Next.js, React, and AWS to support thousands of
-concurrent users with high availability.`,
+        description: `Building full-stack features for an AI-powered clinical search application that gives GPs source-grounded,
+LLM-generated answers, using Python and retrieval-augmented generation (RAG). Migrated an existing Svelte
+application to Next.js to align it with the wider React platform. Built internal observability tools that bring
+internal and third-party monitoring into one place.`,
+        designation: "Senior Software Engineer",
+        years: "Sep 2026 - Present",
+      },
+      {
+        description: `Co-architected a greenfield financial data platform for investors on React, Next.js, TypeScript and AWS,
+built to support thousands of concurrent users with high availability. Built visualisations and interactive tables
+that render millions of rows without blocking the UI. Reworked state management and data fetching with Zustand
+and TanStack Query, cutting perceived load times by an estimated 40–50%.`,
         designation: "Software Engineer",
-        years: "April 2025 - Present",
+        years: "Apr 2025 - Sep 2026",
       },
     ],
   },
@@ -25,10 +34,10 @@ concurrent users with high availability.`,
     companyName: "Villvay Systems (Pvt) Ltd",
     experiences: [
       {
-        description: `Fixed-term contract to rescue a delayed e-commerce launch - onboarded mid-project with an aggressive go-live
-deadline.`,
-        designation: "Software Engineer",
-        years: "January 2025 - April 2025",
+        description: `Joined mid-project to rescue a delayed e-commerce launch. Refactored a fragmented Next.js/React codebase,
+resolved technical debt and delivered a stable, launch-ready frontend on an aggressive deadline.`,
+        designation: "Software Engineer (Fixed-term Contract)",
+        years: "Jan 2025 - Apr 2025",
       },
     ],
   },
@@ -37,16 +46,16 @@ deadline.`,
     companyName: "Aeronology",
     experiences: [
       {
-        description: `Served as a core contributor on the full rewrite of AeroControl, migrating a legacy Vue.js architecture to a
-modern React stack. Implemented React Query with advanced caching strategies within a BFF architecture,
-cutting baseline load times by an estimated 35%.`,
+        description: `Core contributor on the full rewrite of AeroControl from Vue.js to React. Implemented React Query caching
+within a BFF architecture, cutting baseline load times by an estimated 35%. Drove the application-wide API
+migration from GraphQL to REST, removing payload bottlenecks and stabilising end-to-end data handling.`,
         designation: "Software Engineer",
-        years: "March 2023 - January 2025",
+        years: "Mar 2023 - Jan 2025",
       },
       {
-        description: `Delivered full-stack features using AWS Lambda, DynamoDB, and S3 within a React, Node.js, and .NET
+        description: `Delivered full-stack features using AWS Lambda, DynamoDB and S3 within a React, Node.js and .NET
 ecosystem.`,
-        designation: "Software Engineer (Intern) ",
+        designation: "Software Engineer (Intern)",
         years: "Sep 2022 - Mar 2023",
       },
     ],

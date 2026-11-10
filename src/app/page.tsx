@@ -1,8 +1,6 @@
-import BlogPreview from "@/modules/Landing/BlogPreview";
 import Experience from "@/modules/Landing/Experience";
 import HeroSection from "@/modules/Landing/HeroSection";
 import HireMe from "@/modules/Landing/HireMe";
-import SideProjects from "@/modules/Landing/SideProjects";
 import TechStack from "@/modules/Landing/TechStack";
 
 export default async function Home() {
@@ -10,9 +8,9 @@ export default async function Home() {
     <>
       <HeroSection />
       <TechStack />
-      <SideProjects />
+      {/* <SideProjects /> */}
       <Experience />
-      <BlogPreview />
+      {/* <BlogPreview /> */}
       <HireMe />
     </>
   );

@@ -8,7 +8,7 @@ const socials = [
     label: "LinkedIn",
     Icon: LinkedinIcon,
   },
-  { url: "https://wa.me/+94762629249", label: "WhatsApp", Icon: MessageCircleMore },
+  { url: "https://wa.me/61420579249", label: "WhatsApp", Icon: MessageCircleMore },
 ];
 
 const HireMe = () => {
@@ -25,10 +25,10 @@ const HireMe = () => {
         Let&apos;s build something great together
       </h2>
       <p className="text-body mt-4 max-w-md mx-auto leading-7 text-base">
-        I&apos;m currently available for full-time frontend roles and select
-        freelance projects. If you&apos;re looking for an engineer who cares
-        about both code quality and user experience, I&apos;d love to hear from
-        you.
+        I&apos;m open to senior software engineering roles, remote or with
+        relocation, and to select freelance projects. If you need an engineer
+        who can own a feature from the database to the UI and cares about the
+        details, I&apos;d love to hear from you.
       </p>
 
       <div className="flex items-center justify-center gap-3 mt-8 flex-wrap">
