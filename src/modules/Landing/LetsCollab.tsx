@@ -32,7 +32,7 @@ const collabLinks = [
     Icon: BookOpenText,
   },
   {
-    url: "https://wa.me/+94762629249",
+    url: "https://wa.me/61420579249",
     title: "WhatsApp",
     Icon: MessageCircleMore,
   },

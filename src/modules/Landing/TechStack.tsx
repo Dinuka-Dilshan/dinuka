@@ -1,16 +1,18 @@
 import Section from "@/modules/Landing/Section";
 
 const skills = [
+  { label: "TypeScript" },
   { label: "React" },
   { label: "Next.js" },
-  { label: "TypeScript" },
-  { label: "Tailwind CSS" },
-  { label: "React Query" },
   { label: "Node.js" },
+  { label: "Python" },
   { label: "AWS" },
-  { label: "Git" },
-  { label: ".NET" },
+  { label: "PostgreSQL" },
   { label: "DynamoDB" },
+  { label: "TanStack Query" },
+  { label: "Tailwind CSS" },
+  { label: "Playwright" },
+  { label: "RAG / LLMs" },
 ];
 
 const TechStack = () => {
