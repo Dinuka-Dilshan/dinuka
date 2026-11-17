@@ -1,5 +1,6 @@
 import dinukaImage from "#/opengraph-image.png";
 import Footer from "@/modules/Landing/Footer";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
@@ -10,10 +11,12 @@ export const metadata: Metadata = {
   title: "Dinuka Abeygunawardhana (Dinuka Dilshan) | Senior Software Engineer",
   description:
     "Dinuka Abeygunawardhana (Dinuka Dilshan) is a Senior Software Engineer with 4+ years of experience building scalable, accessible web applications with React, Next.js, Node.js, Python and AWS.",
-  authors: [{ name: "Dinuka Abeygunawardhana", url: "https://dinukadilshan.com" }],
+  authors: [
+    { name: "Dinuka Abeygunawardhana", url: "https://dinukadilshan.com" },
+  ],
   creator: "Dinuka Abeygunawardhana",
   keywords: [
-    "Dinuka Abeygunawardhana", 
+    "Dinuka Abeygunawardhana",
     "Dinuka",
     "Dinuka Dilshan",
     "Senior Software Engineer",
@@ -29,11 +32,12 @@ export const metadata: Metadata = {
     "Python",
     "AI / RAG",
     "Cloud Web Apps",
-    "University of Kelaniya", 
+    "University of Kelaniya",
   ],
   metadataBase: new URL("https://dinukadilshan.com"),
   openGraph: {
-    title: "Dinuka Abeygunawardhana (Dinuka Dilshan) | Senior Software Engineer",
+    title:
+      "Dinuka Abeygunawardhana (Dinuka Dilshan) | Senior Software Engineer",
     description:
       "Senior Software Engineer with 4+ years of experience building scalable, accessible web applications. Explore the portfolio of Dinuka Abeygunawardhana.",
     images: [
@@ -70,23 +74,23 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              "name": "Dinuka Abeygunawardhana",
-              "alternateName": "Dinuka Dilshan", 
-              "url": "https://dinukadilshan.com",
-              "image": "https://dinukadilshan.com/opengraph-image.png",
-              "jobTitle": "Software Engineer",
-              "worksFor": {
+              name: "Dinuka Abeygunawardhana",
+              alternateName: "Dinuka Dilshan",
+              url: "https://dinukadilshan.com",
+              image: "https://dinukadilshan.com/opengraph-image.png",
+              jobTitle: "Software Engineer",
+              worksFor: {
                 "@type": "Organization",
-                "name": "Rhino Partners"
+                name: "Rhino Partners",
               },
-              "alumniOf": {
+              alumniOf: {
                 "@type": "CollegeOrUniversity",
-                "name": "University of Kelaniya" 
+                name: "University of Kelaniya",
               },
-              "sameAs": [
+              sameAs: [
                 "https://github.com/Dinuka-Dilshan",
                 "https://www.linkedin.com/in/dinuka-abeygunawardhana/",
-                "https://www.researchgate.net/profile/Dinuka-Abeygunawardhana"
+                "https://www.researchgate.net/profile/Dinuka-Abeygunawardhana",
               ],
             }),
           }}
@@ -96,10 +100,13 @@ export default function RootLayout({
         className={`${bricolage.className} antialiased flex items-center flex-col`}
       >
         <main className="container max-w-3xl my-12 lg:my-24 px-5 lg:px-8">
-          {children} 
+          {children}
           <Footer />
         </main>
       </body>
+      {process.env.NEXT_PUBLIC_GA_ID && (
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+      )}
     </html>
   );
 }
