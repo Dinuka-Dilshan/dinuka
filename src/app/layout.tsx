@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     url: "https://dinukadilshan.com",
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "Dinuka Abeygunawardhana | Senior Software Engineer",
     description:
       "Senior Software Engineer building scalable web applications with React, Next.js, Node.js, Python and AWS.",
