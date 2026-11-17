@@ -1,6 +1,6 @@
 import dinukaImage from "#/opengraph-image.png";
 import Footer from "@/modules/Landing/Footer";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
@@ -96,6 +96,9 @@ export default function RootLayout({
           }}
         />
       </head>
+      {process.env.NEXT_PUBLIC_GTM_ID && (
+        <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />
+      )}
       <body
         className={`${bricolage.className} antialiased flex items-center flex-col`}
       >
@@ -104,9 +107,6 @@ export default function RootLayout({
           <Footer />
         </main>
       </body>
-      {process.env.NEXT_PUBLIC_GA_ID && (
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
-      )}
     </html>
   );
 }
