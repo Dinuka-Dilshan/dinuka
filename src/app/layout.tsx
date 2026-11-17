@@ -78,7 +78,7 @@ export default function RootLayout({
               alternateName: "Dinuka Dilshan",
               url: "https://dinukadilshan.com",
               image: "https://dinukadilshan.com/opengraph-image.png",
-              jobTitle: "Software Engineer",
+              jobTitle: "Senior Software Engineer",
               worksFor: {
                 "@type": "Organization",
                 name: "Rhino Partners",
